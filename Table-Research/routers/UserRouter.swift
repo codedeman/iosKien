@@ -18,11 +18,11 @@ class UserListRouter:PresenterToRouterUsersListProtocol{
     
       let presenter:ViewToPresenterUserListProtocol & InteractorToPresenterUserListPotocol = UserListPresenter()
     
-      userListRef.userPresenter = presenter
-      userListRef.userPresenter?.router = UserListRouter()
-      userListRef.userPresenter?.view = userListRef
-    userListRef.userPresenter?.interactor = UserListInteractor(withApiWorker: UserService())
-      userListRef.userPresenter?.interactor?.presenter = presenter
+        userListRef.userPresenter = presenter
+        userListRef.userPresenter?.router = UserListRouter()
+        userListRef.userPresenter?.view = userListRef
+        userListRef.userPresenter?.interactor = UserListInteractor(withApiWorker: UserService())
+        userListRef.userPresenter?.interactor?.presenter = presenter
   }
   
   

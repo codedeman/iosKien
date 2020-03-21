@@ -23,18 +23,15 @@ class UserViewController: UIViewController {
       print("Starting...")
       UserListRouter.createUsersListModule(userListRef: self)
       print("Start Fetching...")
-
       userPresenter?.fetchUsers()
-      
       configureTableView()
      
-        // Do any additional setup after loading the view.
     }
   
   func configureTableView()  {
     
     self.view.addSubview(tableView)
-         tableView.estimatedRowHeight = 900
+         tableView.estimatedRowHeight = 100
 
          tableView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
          tableView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true

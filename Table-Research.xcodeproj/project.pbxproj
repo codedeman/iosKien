@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0CDE99B7242474CD0089A9BA /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE99B5242474CD0089A9BA /* UsersTableViewCell.swift */; };
 		0CDE99B8242474CD0089A9BA /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDE99B6242474CD0089A9BA /* UsersTableViewCell.xib */; };
-		0CDE99BC2424C4EC0089A9BA /* UserGitHubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE99BA2424C4EC0089A9BA /* UserGitHubCell.swift */; };
-		0CDE99BD2424C4EC0089A9BA /* UserGitHubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDE99BB2424C4EC0089A9BA /* UserGitHubCell.xib */; };
 		0CFE20A7241A19940004F5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE20A6241A19940004F5C3 /* AppDelegate.swift */; };
 		0CFE20A9241A19940004F5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE20A8241A19940004F5C3 /* ViewController.swift */; };
 		0CFE20AC241A19940004F5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFE20AA241A19940004F5C3 /* Main.storyboard */; };
@@ -26,6 +24,9 @@
 		0CFE20E5241A31BA0004F5C3 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE20E4241A31BA0004F5C3 /* UserListPresenter.swift */; };
 		0CFE20E9241A33B10004F5C3 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE20E8241A33B10004F5C3 /* UserViewController.swift */; };
 		0CFE20EC241A350F0004F5C3 /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE20EB241A350F0004F5C3 /* UserListInteractor.swift */; };
+		1852CFAF242519250085B2ED /* Extension_XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852CFAE242519250085B2ED /* Extension_XCTest.swift */; };
+		18AE0CB22425E618000F9523 /* UserApiClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0CB12425E618000F9523 /* UserApiClientSpec.swift */; };
+		18AE0CB42425EDC0000F9523 /* GetUserSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 18AE0CB32425EDC0000F9523 /* GetUserSuccess.json */; };
 		7974F7965D19582964403218 /* libPods-Table-ResearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5676502F0F6DAC312217266 /* libPods-Table-ResearchTests.a */; };
 		90FA9B4DD0EE2816F78A3DFE /* libPods-Table-Research.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1893F493619C8E2BB2053213 /* libPods-Table-Research.a */; };
 		BD6E91D3F4DCC9D496945DAA /* libPods-Table-Research-Table-ResearchUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C052001275CA10B7DC018C7 /* libPods-Table-Research-Table-ResearchUITests.a */; };
@@ -46,13 +47,18 @@
 			remoteGlobalIDString = 0CFE20A2241A19930004F5C3;
 			remoteInfo = "Table-Research";
 		};
+		1852CFB1242519250085B2ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CFE209B241A19930004F5C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CFE20A2241A19930004F5C3;
+			remoteInfo = "Table-Research";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0CDE99B5242474CD0089A9BA /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		0CDE99B6242474CD0089A9BA /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
-		0CDE99BA2424C4EC0089A9BA /* UserGitHubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGitHubCell.swift; sourceTree = "<group>"; };
-		0CDE99BB2424C4EC0089A9BA /* UserGitHubCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserGitHubCell.xib; sourceTree = "<group>"; };
 		0CFE20A3241A19930004F5C3 /* Table-Research.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table-Research.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFE20A6241A19940004F5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CFE20A8241A19940004F5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +81,12 @@
 		0CFE20E8241A33B10004F5C3 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		0CFE20EB241A350F0004F5C3 /* UserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
 		16A29F70BF2ADA7CBA4F0B40 /* Pods-Table-Research.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Table-Research.release.xcconfig"; path = "Target Support Files/Pods-Table-Research/Pods-Table-Research.release.xcconfig"; sourceTree = "<group>"; };
+		1852CFAC242519240085B2ED /* Extension+XCTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Extension+XCTest.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1852CFAE242519250085B2ED /* Extension_XCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_XCTest.swift; sourceTree = "<group>"; };
+		1852CFB0242519250085B2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1893F493619C8E2BB2053213 /* libPods-Table-Research.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Table-Research.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AE0CB12425E618000F9523 /* UserApiClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiClientSpec.swift; sourceTree = "<group>"; };
+		18AE0CB32425EDC0000F9523 /* GetUserSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetUserSuccess.json; sourceTree = SOURCE_ROOT; };
 		18E26B234E9F1A2E7E91F636 /* Pods-Table-Research.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Table-Research.debug.xcconfig"; path = "Target Support Files/Pods-Table-Research/Pods-Table-Research.debug.xcconfig"; sourceTree = "<group>"; };
 		3814A1B90754958725D5F102 /* Pods-Table-Research-Table-ResearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Table-Research-Table-ResearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-Table-Research-Table-ResearchUITests/Pods-Table-Research-Table-ResearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C052001275CA10B7DC018C7 /* libPods-Table-Research-Table-ResearchUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Table-Research-Table-ResearchUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +121,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1852CFA9242519240085B2ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +145,7 @@
 				0CFE20A5241A19940004F5C3 /* Table-Research */,
 				0CFE20BA241A199A0004F5C3 /* Table-ResearchTests */,
 				0CFE20C5241A199A0004F5C3 /* Table-ResearchUITests */,
+				1852CFAD242519250085B2ED /* Extension+XCTest */,
 				0CFE20A4241A19930004F5C3 /* Products */,
 				ADF21A66B6A57D842B33504D /* Pods */,
 				53465C254874C69F3A1CC10F /* Frameworks */,
@@ -139,6 +158,7 @@
 				0CFE20A3241A19930004F5C3 /* Table-Research.app */,
 				0CFE20B7241A199A0004F5C3 /* Table-ResearchTests.xctest */,
 				0CFE20C2241A199A0004F5C3 /* Table-ResearchUITests.xctest */,
+				1852CFAC242519240085B2ED /* Extension+XCTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,8 +187,10 @@
 		0CFE20BA241A199A0004F5C3 /* Table-ResearchTests */ = {
 			isa = PBXGroup;
 			children = (
+				18AE0CB02425E512000F9523 /* Fixtures */,
 				0CFE20BB241A199A0004F5C3 /* Table_ResearchTests.swift */,
 				0CFE20BD241A199A0004F5C3 /* Info.plist */,
+				18AE0CB12425E618000F9523 /* UserApiClientSpec.swift */,
 			);
 			path = "Table-ResearchTests";
 			sourceTree = "<group>";
@@ -212,8 +234,6 @@
 				0CFE20E8241A33B10004F5C3 /* UserViewController.swift */,
 				0CDE99B5242474CD0089A9BA /* UsersTableViewCell.swift */,
 				0CDE99B9242476AA0089A9BA /* xib */,
-				0CDE99BA2424C4EC0089A9BA /* UserGitHubCell.swift */,
-				0CDE99BB2424C4EC0089A9BA /* UserGitHubCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -240,6 +260,23 @@
 				0CFE20EB241A350F0004F5C3 /* UserListInteractor.swift */,
 			);
 			path = interactor;
+			sourceTree = "<group>";
+		};
+		1852CFAD242519250085B2ED /* Extension+XCTest */ = {
+			isa = PBXGroup;
+			children = (
+				1852CFAE242519250085B2ED /* Extension_XCTest.swift */,
+				1852CFB0242519250085B2ED /* Info.plist */,
+			);
+			path = "Extension+XCTest";
+			sourceTree = "<group>";
+		};
+		18AE0CB02425E512000F9523 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				18AE0CB32425EDC0000F9523 /* GetUserSuccess.json */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 		53465C254874C69F3A1CC10F /* Frameworks */ = {
@@ -324,13 +361,31 @@
 			productReference = 0CFE20C2241A199A0004F5C3 /* Table-ResearchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1852CFAB242519240085B2ED /* Extension+XCTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1852CFB3242519250085B2ED /* Build configuration list for PBXNativeTarget "Extension+XCTest" */;
+			buildPhases = (
+				1852CFA8242519240085B2ED /* Sources */,
+				1852CFA9242519240085B2ED /* Frameworks */,
+				1852CFAA242519240085B2ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1852CFB2242519250085B2ED /* PBXTargetDependency */,
+			);
+			name = "Extension+XCTest";
+			productName = "Extension+XCTest";
+			productReference = 1852CFAC242519240085B2ED /* Extension+XCTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0CFE209B241A19930004F5C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Ominext;
 				TargetAttributes = {
@@ -343,6 +398,10 @@
 					};
 					0CFE20C1241A199A0004F5C3 = {
 						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0CFE20A2241A19930004F5C3;
+					};
+					1852CFAB242519240085B2ED = {
+						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = 0CFE20A2241A19930004F5C3;
 					};
 				};
@@ -363,6 +422,7 @@
 				0CFE20A2241A19930004F5C3 /* Table-Research */,
 				0CFE20B6241A199A0004F5C3 /* Table-ResearchTests */,
 				0CFE20C1241A199A0004F5C3 /* Table-ResearchUITests */,
+				1852CFAB242519240085B2ED /* Extension+XCTest */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +435,6 @@
 				0CDE99B8242474CD0089A9BA /* UsersTableViewCell.xib in Resources */,
 				0CFE20B1241A199A0004F5C3 /* LaunchScreen.storyboard in Resources */,
 				0CFE20AE241A199A0004F5C3 /* Assets.xcassets in Resources */,
-				0CDE99BD2424C4EC0089A9BA /* UserGitHubCell.xib in Resources */,
 				0CFE20AC241A19940004F5C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,10 +443,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AE0CB42425EDC0000F9523 /* GetUserSuccess.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0CFE20C0241A199A0004F5C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1852CFAA242519240085B2ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -475,7 +542,6 @@
 				0CFE20D8241A24A10004F5C3 /* User.swift in Sources */,
 				0CFE20DB241A25EB0004F5C3 /* UserService.swift in Sources */,
 				0CFE20D5241A1DBC0004F5C3 /* TableViewCell.swift in Sources */,
-				0CDE99BC2424C4EC0089A9BA /* UserGitHubCell.swift in Sources */,
 				0CFE20E2241A31110004F5C3 /* UserRouter.swift in Sources */,
 				0CFE20E5241A31BA0004F5C3 /* UserListPresenter.swift in Sources */,
 				0CFE20EC241A350F0004F5C3 /* UserListInteractor.swift in Sources */,
@@ -490,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFE20BC241A199A0004F5C3 /* Table_ResearchTests.swift in Sources */,
+				18AE0CB22425E618000F9523 /* UserApiClientSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +565,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFE20C7241A199A0004F5C3 /* Table_ResearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1852CFA8242519240085B2ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1852CFAF242519250085B2ED /* Extension_XCTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +588,11 @@
 			isa = PBXTargetDependency;
 			target = 0CFE20A2241A19930004F5C3 /* Table-Research */;
 			targetProxy = 0CFE20C3241A199A0004F5C3 /* PBXContainerItemProxy */;
+		};
+		1852CFB2242519250085B2ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CFE20A2241A19930004F5C3 /* Table-Research */;
+			targetProxy = 1852CFB1242519250085B2ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -776,6 +856,46 @@
 			};
 			name = Release;
 		};
+		1852CFB4242519250085B2ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				INFOPLIST_FILE = "Extension+XCTest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kienphamdev.com.Extension-XCTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Table-Research";
+			};
+			name = Debug;
+		};
+		1852CFB5242519250085B2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PBBT599Q77;
+				INFOPLIST_FILE = "Extension+XCTest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kienphamdev.com.Extension-XCTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Table-Research";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -811,6 +931,15 @@
 			buildConfigurations = (
 				0CFE20D2241A199A0004F5C3 /* Debug */,
 				0CFE20D3241A199A0004F5C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1852CFB3242519250085B2ED /* Build configuration list for PBXNativeTarget "Extension+XCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1852CFB4242519250085B2ED /* Debug */,
+				1852CFB5242519250085B2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -26,7 +26,7 @@ protocol UserApiClient {
 
 
 class UserService: UserApiClient {
-  func requestUserWithUsername(_ username: String, onSuccess: UserCallback?, onError: ErrorCallback?) {
+  func requestUserWithUsername(_ username: String, onSuccess: UserCallback? , onError: ErrorCallback? = nil) {
     Alamofire.request(API_USER,method: HTTPMethod.get).responseJSON { (response) in
       switch response.result{
       case .success(_):

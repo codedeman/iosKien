@@ -13,15 +13,13 @@ class UsersTableViewCell: UITableViewCell {
   @IBOutlet var avatarImage: UIImageView!
   @IBOutlet var userNameLabel: UILabel!
   @IBOutlet var scoreLabel: UILabel!
-
   override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
   
   func configureCell(user:UserEntity)  {
     
-     Alamofire.request(user.avatar_url).responseData { (response) in
+    Alamofire.request(user.avatar_url).responseData { (response) in
         if response.error == nil{
           print(response.result)
           if let data = response.data{

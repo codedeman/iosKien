@@ -1,16 +1,14 @@
 //
-//  Table_ResearchTests.swift
+//  XCTest+Extension.swift
 //  Table-ResearchTests
 //
-//  Created by Ominext on 3/12/20.
+//  Created by Apple on 3/21/20.
 //  Copyright © 2020 Ominext. All rights reserved.
 //
 
 import XCTest
-import Mockingjay
-@testable import Table_Research
 
-class Table_ResearchTests: XCTestCase {
+class XCTest_Extension: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,18 +29,5 @@ class Table_ResearchTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
-}
-
-extension XCTest{
-  public func stub(urlString: String, jsonFileName: String) -> Mockingjay.Stub {
-    let path = Bundle(for: type(of: self)).path(forResource: jsonFileName, ofType: "json")!
-    let data = NSData(contentsOfFile: path)!
-    return stub(uri(urlString), jsonData(data as Data))
-  }
-
-  public func stub(urlString: String, error: NSError) -> Mockingjay.Stub {
-    return stub(uri(urlString), failure(error))
-  }
 
 }

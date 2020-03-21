@@ -11,9 +11,11 @@ import ObjectMapper
 
 struct UserEntity:Mappable {
   
- private var login:String!
- private var avatar_url:String!
- private var score:Double!
+ var login:String!
+ var avatar_url:String!
+ var score:Double!
+  
+
   init?(map: Map) {
     mapping(map: map)
   }
